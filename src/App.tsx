@@ -7,11 +7,11 @@ function App() {
     const { showSuccessToast, showWarningToast, showDangerToast, toastRef } = useToast();
 
     function handleClickSuccess() {
-        showSuccessToast('success text');
+        showSuccessToast('Success text');
     }
 
     function handleClickDanger() {
-        showDangerToast('danger text');
+        showDangerToast('Danger text');
     }
 
     function handleClickWarning() {
@@ -25,7 +25,7 @@ function App() {
     return (
         <div className='App' style={{padding: 30}}>
             <div style={{height: 100}}></div>
-            <button onClick={handleClickSuccess}>Show Toast</button>
+            <button onClick={handleClickSuccess}>Show Success</button>
             <button onClick={handleClickDanger}>Show Danger</button>
             <button onClick={handleClickWarning}>Show Warning</button>
             <button onClick={handleClickBigText}>Show Big Text</button>

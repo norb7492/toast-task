@@ -6,7 +6,7 @@
     transition: 0.4s;
     padding: 0.5rem 0.75rem 0.5rem 0.75rem;
     margin: 1rem;
-    font-family: 'Montserrat';
+    font-family: var(--font-family);
     animation: toast-in-bottom .7s;
     width: 80%;
     max-width: 600px;
@@ -30,18 +30,18 @@
 }
 
 .warning-box {
-    background-color: #F2C94C;
-    color: #6E5404;
+    background-color: var(--warning-color);
+    color: var(--warning-color-text);
 }
 
 .success-box {
-    background-color: #6FCF97;
-    color: #0F552C;
+    background-color: var(--success-color);
+    color: var(--success-color-text);
 }
 
 .danger-box {
-    background-color: #EB5757;
-    color: #FFFFFF;
+    background-color: var(--danger-color);;
+    color: var(--danger-color-text);
 }
 
 .content-container button {
