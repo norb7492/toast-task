@@ -8,6 +8,16 @@ Also works for bigger text
 
 to start the project simply run "npm install" and afterwards "npm run dev"
 
+In the application there are example buttons visible to call the Toasters
+
+![image](https://github.com/norb7492/toast-task/assets/6706757/cddd43e7-3fb1-4f6a-a636-b7b2944659f6)
+
+By clicking them the Toasters will appear
+
+![image](https://github.com/norb7492/toast-task/assets/6706757/cd759f8a-53ab-4b76-b62b-dffbedd4a604)
+
+
+
 To use the Toast Component simply import 
 ```ts
 import Toast from './components/toast/toast.tsx';
