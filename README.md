@@ -14,8 +14,7 @@ In the application there are example buttons visible to call the Toasters
 
 By clicking them the Toasters will appear
 
-![image](https://github.com/norb7492/toast-task/assets/6706757/cd759f8a-53ab-4b76-b62b-dffbedd4a604)
-
+![image](https://github.com/norb7492/toast-task/assets/6706757/cd8936a9-375f-4318-98c1-8433b529015a)
 
 
 To use the Toast Component simply import 
