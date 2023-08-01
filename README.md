@@ -1,27 +1,46 @@
-# React + TypeScript + Vite
+# Toast Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/norb7492/toast-task/assets/6706757/1dbcd445-b17d-419c-b4e9-b06540800d78)
 
-Currently, two official plugins are available:
+Also works for bigger text
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/norb7492/toast-task/assets/6706757/b56ec7db-0f7f-4a46-961e-a8ee83787fca)
 
-## Expanding the ESLint configuration
+to start the project simply run "npm install" and afterwards "npm run dev"
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To use the Toast Component simply import 
+```ts
+import Toast from './components/toast/toast.tsx';
+import useToast from './components/toast/hooks/use-toast.ts';
+```
+then add the component in the tsx
+timeout is set default 6000 if prop is not passed
 
-- Configure the top-level `parserOptions` property like this:
+```ts
+<Toast ref={toastRef} timeout={3000} />
+```
+we need to pass the toastRef 
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```ts
+const { showSuccessToast, showWarningToast, showDangerToast, toastRef } = useToast();
+```
+now is everything good to go just use the hooks from the use useToast to call the Toast
+
+```ts
+showSuccessToast('success text');
+```
+![image](https://github.com/norb7492/toast-task/assets/6706757/1b310ffe-6e96-41fc-8557-3c0901f43b4a)
+
+```ts
+showDangerToast('danger text');
+```
+![image](https://github.com/norb7492/toast-task/assets/6706757/d18f54b6-4ce3-4cb7-b0ed-0acee006eb88)
+
+```ts
+showWarningToast('Warning Text');
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![image](https://github.com/norb7492/toast-task/assets/6706757/48f9fef3-8372-4921-b0f2-89c3d8d7d3d9)
+
+
+
