@@ -1,0 +1,63 @@
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border-radius:5px;
+    transition: 0.4s;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    margin: 1rem;
+    font-family: 'Montserrat';
+    animation: toast-in-bottom .7s;
+    width: 80%;
+    max-width: 600px;
+}
+
+.content-container .content-subcontainer {
+    display: flex;
+    align-items:center;
+}
+
+.content-container .content-subcontainer .toast-box-text-content {
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.content-container .content-subcontainer .icon-container {
+    height: 100%;
+    padding-top: 1.25rem;
+}
+
+.warning-box {
+    background-color: #F2C94C;
+    color: #6E5404;
+}
+
+.success-box {
+    background-color: #6FCF97;
+    color: #0F552C;
+}
+
+.danger-box {
+    background-color: #EB5757;
+    color: #FFFFFF;
+}
+
+.content-container button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: 0.25rem;
+}
+
+@keyframes toast-in-bottom {
+    from {
+        transform: translateY(800px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
